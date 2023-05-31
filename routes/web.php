@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategorieController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
 
@@ -18,12 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/form', function () {
-    return view('form.form');
-});
+Route::get('/categories', [CategorieController::class, 'index']);
 
-Route::controller(MovieController::class)->group(function () {
-    Route::get('/movies', 'index')->name('moviess.index');
-});
+Route::get('/movies', [MovieController::class, 'index']);
+
 
 

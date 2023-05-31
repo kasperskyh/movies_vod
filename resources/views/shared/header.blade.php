@@ -15,6 +15,6 @@
           <a class="nav-link mr-3" href="#">Wypożycz</a>
         </li>
       </ul>
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Zaloguj</button>
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit"> <a class="nav-link mr-1" href="login">Zaloguj</a></button>
     </div>
   </nav>

@@ -3,20 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
-use App\Models\Movie;
 use Illuminate\Http\Request;
 
-class MovieController extends Controller
+class CategorieController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $movies = Movie::with('category')->get();
-
-        return view('moviess.index', [
-            'movies' => Movie::all()
+        return view('categories.index', [
+            'categories' => Category::all()
         ]);
     }
 
