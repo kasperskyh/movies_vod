@@ -2,10 +2,17 @@
 
 namespace Database\Seeders;
 
+<<<<<<< HEAD
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+=======
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
+use App\Models\User;
+>>>>>>> origin/master
 
 class UserSeeder extends Seeder
 {
@@ -14,6 +21,7 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+<<<<<<< HEAD
         User::truncate();
         User::insert(
             [
@@ -36,6 +44,21 @@ class UserSeeder extends Seeder
                 [
                     'name' => 'Marian', 'email' => 'watrobka@email.com', 'password' => Hash::make('user123'),
                     'role' => 'user',
+=======
+        User::insert(
+            [
+                [
+                    'name' => 'Janek', 'email' => 'jan@email.com', 'password' => '1234',
+                    'role' => 'admin'
+                ],
+                [
+                    'name' => 'Adam', 'email' => 'adamek@email.com', 'password' => '123123',
+                    'role' => 'user'
+                ],
+                [
+                    'name' => 'Laura', 'email' => 'laurak@email.com', 'password' => '123123',
+                    'role' => 'user'
+>>>>>>> origin/master
                 ],
             ]
         );

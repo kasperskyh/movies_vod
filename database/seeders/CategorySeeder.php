@@ -34,6 +34,7 @@ class CategorySeeder extends Seeder
                 [
                     'name' => 'Dla Dzieci', 'description' => 'Kategoria filmu dla dzieci: pełna przygód, edukacyjna, pełna humoru, dostosowana do wieku, inspirująca wyobraźnię i wartościowa.', 'age' => '7'
                 ],
+<<<<<<< HEAD
                 [
                     'name' => 'Sci-Fi', 'description' => 'Sci-Fi: podróże w przyszłość, niesamowite technologie, obce istoty. Historie o ludzkiej naturze i naszej roli we wszechświecie. Efekty specjalne i przygody w kosmosie.', 'age' => '12'
                 ],
@@ -46,6 +47,8 @@ class CategorySeeder extends Seeder
                 [
                     'name' => 'Animowane', 'description' => 'Kategoria filmu animowanego: magiczne animacje, przygody, emocje dla wszystkich wieków. Ożywiona wyobraźnia i mądre przesłanie. Dla dzieci i dorosłych, pełne kolorów i niezwykłych postaci.', 'age' => '3'
                 ],
+=======
+>>>>>>> origin/master
             ]
         );
     }

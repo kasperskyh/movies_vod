@@ -9,7 +9,11 @@ class Movie extends Model
 {
     use HasFactory;
 
+<<<<<<< HEAD
     protected $fillable = ['title', 'duration', 'rate', 'category_id', 'price', 'company', 'img'];
+=======
+    protected $fillable = ['title', 'duration', 'rating', 'category_id', 'price', 'company'];
+>>>>>>> origin/master
 
     public $timestamps = false;
 

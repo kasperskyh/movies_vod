@@ -22,11 +22,14 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
+<<<<<<< HEAD
     protected $routeMiddleware = [
         // Inne middleware...
         'admin' => \App\Http\Middleware\AdminMiddleware::class,
         'admin-user' => \App\Http\Middleware\AdminUserMiddleware::class,
     ];
+=======
+>>>>>>> origin/master
 
     /**
      * The application's route middleware groups.
@@ -53,7 +56,11 @@ class Kernel extends HttpKernel
     /**
      * The application's middleware aliases.
      *
+<<<<<<< HEAD
      * Aliases may be used to conveniently assign middleware to routes and groups.
+=======
+     * Aliases may be used instead of class names to conveniently assign middleware to routes and groups.
+>>>>>>> origin/master
      *
      * @var array<string, class-string|string>
      */

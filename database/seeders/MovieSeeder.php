@@ -16,6 +16,7 @@ class MovieSeeder extends Seeder
         Movie::insert(
             [
                 [
+<<<<<<< HEAD
                     'title' => 'Nieogarniający Student', 'duration' => '70', 'rate' => '1', 'category_id' => '7', 'price' => '15', 'company' => 'Bobo', 'img' => 'movies/nstudent.jpg'
                 ],
                 [
@@ -59,6 +60,12 @@ class MovieSeeder extends Seeder
                 ],
                 [
                     'title' => 'Pączek ludojad', 'duration' => '70', 'rate' => '6', 'category_id' => '8', 'price' => '25', 'company' => 'ForKids', 'img' => 'movies/paczek.jpg'
+=======
+                    'title' => 'c1', 'duration' => '140', 'rate' => '1', 'category_id' => '1', 'price' => '70', 'company' => 'xxx'
+                ],
+                [
+                    'title' => 'v2', 'duration' => '120', 'rate' => '8', 'category_id' => '3', 'price' => '40', 'company' => 'xxx'
+>>>>>>> origin/master
                 ],
             ]);
     }

@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CategoryController;
@@ -12,6 +13,11 @@ use App\Models\Category;
 use App\Models\Movie;
 use App\Models\Order;
 use Illuminate\Support\Facades\Artisan;
+=======
+use App\Http\Controllers\CategorieController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MovieController;
+>>>>>>> origin/master
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +30,7 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/linkstorage', function () {
     Artisan::call('storage:link');
 });
@@ -89,6 +96,15 @@ Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
 
 
 
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/categories', [CategorieController::class, 'index']);
+
+Route::get('/movies', [MovieController::class, 'index']);
+>>>>>>> origin/master
 
 
 

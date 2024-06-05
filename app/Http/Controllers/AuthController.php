@@ -3,10 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
+=======
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+>>>>>>> origin/master
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
+<<<<<<< HEAD
 
     public function login()
     {
@@ -47,4 +55,29 @@ class AuthController extends Controller
         return redirect()->route('welcome');
     }
 
+=======
+    public function showLoginForm()
+    {
+        return view('auth.login');
+    }
+
+    public function login(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            // Użytkownik został pomyślnie uwierzytelniony
+            return redirect()->intended('welcome');
+        } else {
+            // Nieudane uwierzytelnienie
+            return redirect()->back()->withErrors(['message' => 'Nieprawidłowe dane logowania']);
+        }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/');
+    }
+>>>>>>> origin/master
 }

@@ -21,6 +21,10 @@ class Order extends Model
     }
     public function customer()
     {
+<<<<<<< HEAD
         return $this->belongsTo(Customer::class);
+=======
+        return $this->hasMany(Customer::class);
+>>>>>>> origin/master
     }
 }

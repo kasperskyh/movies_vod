@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,3 +14,25 @@
 </style>
 </head>
 
+=======
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Movies VOD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kategorie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Filmy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mr-3" href="#">Wypożycz</a>
+        </li>
+      </ul>
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit"> <a class="nav-link mr-1" href="login">Zaloguj</a></button>
+    </div>
+  </nav>
+>>>>>>> origin/master

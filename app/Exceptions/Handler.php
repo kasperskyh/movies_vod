@@ -2,14 +2,19 @@
 
 namespace App\Exceptions;
 
+<<<<<<< HEAD
 use Illuminate\Database\QueryException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Support\Facades\Log;
+=======
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+>>>>>>> origin/master
 use Throwable;
 
 class Handler extends ExceptionHandler
 {
     /**
+<<<<<<< HEAD
      * A list of exception types with their corresponding custom log levels.
      *
      * @var array<class-string<\Throwable>, \Psr\Log\LogLevel::*>
@@ -29,6 +34,9 @@ class Handler extends ExceptionHandler
 
     /**
      * A list of the inputs that are never flashed to the session on validation exceptions.
+=======
+     * The list of the inputs that are never flashed to the session on validation exceptions.
+>>>>>>> origin/master
      *
      * @var array<int, string>
      */
@@ -44,6 +52,7 @@ class Handler extends ExceptionHandler
     public function register(): void
     {
         $this->reportable(function (Throwable $e) {
+<<<<<<< HEAD
             Log::channel('stderr')->error($e->getMessage());
         });
 
@@ -59,6 +68,9 @@ class Handler extends ExceptionHandler
             }
 
             return back()->withError($e->getMessage())->withInput();
+=======
+            //
+>>>>>>> origin/master
         });
     }
 }

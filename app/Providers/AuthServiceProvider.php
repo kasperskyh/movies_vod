@@ -3,12 +3,16 @@
 namespace App\Providers;
 
 // use Illuminate\Support\Facades\Gate;
+<<<<<<< HEAD
 
 use App\Models\Country;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
 use App\Models\User;
 use App\Policies\CountryPolicy;
+=======
+use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+>>>>>>> origin/master
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -18,7 +22,11 @@ class AuthServiceProvider extends ServiceProvider
      * @var array<class-string, class-string>
      */
     protected $policies = [
+<<<<<<< HEAD
 
+=======
+        //
+>>>>>>> origin/master
     ];
 
     /**
@@ -26,10 +34,14 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+<<<<<<< HEAD
         Gate::define('is-admin', function (User $user) {
             //return $user->role_id == 1;
             return $user->isAdmin();
         });
 
+=======
+        //
+>>>>>>> origin/master
     }
 }

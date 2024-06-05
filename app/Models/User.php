@@ -6,8 +6,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+=======
+>>>>>>> origin/master
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
@@ -43,6 +46,7 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
+<<<<<<< HEAD
     ];
 
     public function isAdmin()
@@ -54,4 +58,8 @@ class User extends Authenticatable
         $this->attributes['password'] = Hash::make($password);
     }
 
+=======
+        'password' => 'hashed',
+    ];
+>>>>>>> origin/master
 }
