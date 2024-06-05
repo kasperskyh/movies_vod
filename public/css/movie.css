@@ -1,0 +1,130 @@
+.movies-list {
+    margin-top: 20px;
+}
+
+.movie-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-item .counter {
+    flex-shrink: 0;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.movie-item .divider {
+    height: 100%;
+    width: 1px;
+    background-color: #ddd;
+    margin-right: 10px;
+}
+
+.movie-item .image {
+    flex-shrink: 0;
+    width: auto;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.movie-item .image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.movie-item .details {
+    flex-grow: 1;
+}
+
+.movie-item .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.movie-item .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.movie-item .rating .stars {
+    color: #f0c60d;
+    margin-right: 5px;
+}
+
+.movie-item .rating .value {
+    font-weight: bold;
+}
+
+.movie-item .duration,
+.movie-item .category,
+.movie-item .price,
+.movie-item .company {
+    margin-bottom: 5px;
+}
+
+.movie-item .edit-button {
+    margin-top: 10px;
+}
+
+/* Responsywność */
+@media (max-width: 576px) {
+    .movie-item {
+        flex-direction: column;
+    }
+
+    .movie-item .counter,
+    .movie-item .divider,
+    .movie-item .image {
+        margin: 0;
+    }
+
+    .movie-item .divider {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .movie-item .image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .movie-item .details {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .movie-item .image {
+        height: 120px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .movie-item .image {
+        height: 130px;
+    }
+}
+@media (max-width: 576px) {
+    .movie-item .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .movie-item .image img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
